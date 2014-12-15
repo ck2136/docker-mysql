@@ -1,0 +1,6 @@
+exifread
+sqlalchemy
+texttable
+paramiko
+boto
+alembic
