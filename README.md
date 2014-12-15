@@ -9,7 +9,7 @@ Usage
 
 Run a container exposing port 3306 to the host and changing default root password:
 
-     `$ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysecretpwd lec00q/mysql`
+     $ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysecretpwd lec00q/mysql
 
 The default workdir is `/tmp/db`. You can mount a host directory that contains python scripts
 used to initialize the database into the container as a volume.
@@ -18,11 +18,11 @@ For example, suppose that you have a python script named `dbclasses.py` which ex
 to setup a new database. The script is in a local directory named `/home/lec00q/database`.
 Let's mount that directory as a volume:
 
-    `$ docker run --name mysql -p 3306:3306 -v /home/lec00q/database:/tmp/db lec00q/mysql`
+    $ docker run --name mysql -p 3306:3306 -v /home/lec00q/database:/tmp/db lec00q/mysql
 
 Then, while the container is running, you may run the script using `docker exec`:
 
-    `$ docker exec mysql python -c "import dbclasses; db_classes.initialize('mydb')"`
+    $ docker exec mysql python -c "import dbclasses; db_classes.initialize('mydb')"
 
 
 Environment variables
