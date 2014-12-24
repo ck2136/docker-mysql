@@ -4,6 +4,7 @@ MAINTAINER lec00q
 RUN apt-get update
 RUN apt-get install -y python-dev python-pip python-mysqldb
 
+COPY my.cnf /etc/mysql/conf.d/my.cnf
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
