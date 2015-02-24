@@ -4,3 +4,5 @@ texttable
 paramiko
 boto
 alembic
+passlib
+itsdangerous
