@@ -6,3 +6,5 @@ boto
 alembic
 passlib
 itsdangerous
+configargparse
+Pillow
