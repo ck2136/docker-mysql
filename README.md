@@ -2,6 +2,8 @@ docker-mysql
 ============
 
 A docker image for running a mysql server instance that also supports python and SQLAlchemy.
+This is one of the docker images used for development at [Trya](http://www.trya.it).
+
 It is based on the [mysql image](https://registry.hub.docker.com/u/centurylink/mysql/) provided by CenturyLink.
 
 Usage
