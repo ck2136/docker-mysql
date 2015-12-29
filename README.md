@@ -1,13 +1,11 @@
-docker-mysql
-============
+# docker-mysql
 
 A docker image for running a mysql server instance that also supports python and SQLAlchemy.
 This is one of the docker images used for development at [Trya](http://www.trya.it).
 
 It is based on the [mysql image](https://registry.hub.docker.com/u/centurylink/mysql/) provided by CenturyLink.
 
-Usage
------
+## Usage
 
 Run a container exposing port 3306 to the host and changing default root password:
 
@@ -29,8 +27,7 @@ While the container is running, you may run the script using `docker exec`:
     $ docker exec mysql python -c "import dbclasses; db_classes.initialize('mydb')"
 
 
-Environment variables
----------------------
+## Environment variables
 
  - `MYSQL_ROOT_PASSWORD`: The password for the root user. Defaults to a blank password
  - `MYSQL_DATABASE`: A database to automatically create. If not provided, does not create a database.
