@@ -1,11 +1,2 @@
-exifread
 sqlalchemy
-texttable
-paramiko
-boto
 alembic
-passlib
-itsdangerous
-configargparse
-Pillow
-piexif
